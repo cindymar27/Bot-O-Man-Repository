@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bot-O-Man</title>
+    <script  src="BOT-O-MAN_SCRIPT.js"></script>
+    <link rel="stylesheet" href="./BOT-O-MAN.css">
+</head>
+<body onload="B.DashboardOn()">
+    <div id="Banner">
+        <div id="Title_div">
+            <h1>Welcome to Bot-O-Man</h1>
+            <h3>Let's go and create some ROBOTS!</h3>
+            <p>Press "ok" so the robot can keep performing tasks</p>
+       </div>
+       
+    </div>
+    
+   <div id="Form_div">
+       <form action="">
+      <label for="name"> Robot name:</label>
+      <input type="text" name="name" id="Bot_name" required>
+      <div id="Selector_div">
+            <label for="type">Choose a robot type:</label>
+            <select id="Bot_type"  >
+                <option value="Unipedal">Unipedal</option>
+                <option value="Bipedal">Bipedal</option>
+                <option value="Quadrupedal">Quadrupedal</option>
+                <option value="Arachnid">Arachnid</option>
+                <option value="Radial">Radial</option>
+                <option value="Aeronautical">Aeronautical</option>
+            </select>
+          <Button type="submit" onclick="B.CreateBot()">Create</Button>
+      </div>
+    </form>
+    </div>
+
+<div>
+    <table>
+        <thead>
+                <tr>
+                        <th>Robot name</th>
+                        <th>type</th>
+                        <th>tasks completed</th>
+                        <th>uncredited tasks</th>
+                </tr>
+        </thead>
+        <tbody>
+     
+
+        </tbody>
+    </table>
+
+</div>
+
+
+</body>
+</html>
